@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agendamento de Corte de Cabelo</title>
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+<body>
+    <h2>Agendamento de Corte de Cabelo</h2>
+    <form action="processar_agendamento.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br>
+        <h3>Informações do Serviço:</h3>
+
+        <label for="data">Data de Preferência:</label>
+        <input type="date" id="data" name="data" required><br>
+
+        <label for="horario">Horário de Preferência:</label>
+        <input type="time" id="horario" name="horario" required><br>
+
+        <h3>Tipo de Corte:</h3>
+
+        <input type="radio" id="corte-curto" name="tipo-corte" value="Corte de Cabelo Curto">
+        <label for="corte-curto">Degradê</label><br>
+
+        <input type="radio" id="corte-medio" name="tipo-corte" value="Corte de Cabelo Médio">
+        <label for="corte-medio">Moicano</label><br>
+
+        <input type="radio" id="corte-longo" name="tipo-corte" value="Corte de Cabelo Longo">
+        <label for="corte-longo">Outro estilo de cabelo</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
